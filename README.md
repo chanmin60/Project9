@@ -4,17 +4,18 @@ C++ 라이브러리 구현 내용
 
 1. GenerateRandomNumber()
 1~9 사이의 숫자 3개를 중복 없이 생성
+
 게임 시작 시 정답 숫자 설정에 사용
 
-2. ExtractValidNumber(Input)
+3. ExtractValidNumber(Input)
 사용자 입력을 필터링 및 유효성 검사
 숫자 3자리(1~9) 중복 없이 구성되어야 유효
 
-3. EvaluateGuess(Secret, Guess, AttemptCount, Result, OutCount)
+4. EvaluateGuess(Secret, Guess, AttemptCount, Result, OutCount)
 정답과 사용자 입력을 비교하여 Strike / Ball / Out 판정
 시도 횟수 및 아웃 카운트에 따라 승패 결정 ("Win!", "Lose!", 혹은 진행 중인 결과 텍스트 반환)
 
-4. HandleMessageFromClient(Input, Secret, AttemptCount, OutCount, Result, bShouldReset)
+5. HandleMessageFromClient(Input, Secret, AttemptCount, OutCount, Result, bShouldReset)
 채팅 입력 처리 핵심 함수
 유효성 검사 → 판정 → 결과 문자열 구성
 
